@@ -1,0 +1,147 @@
+$white: #fff;
+$chorus-color: #46c0ba;
+$verse-color: #ff6469;
+$pre-chorus-color: rgba(255, 100, 105, 0.5);
+$bridge-color: rgba(70, 192, 186, 0.5);
+$verse-color-soft: rgba(255, 100, 105, 0.26);
+$chorus-color-soft: rgba(70, 192, 186, 0.28);
+$grey:#686969;
+$dark-grey:#383838;
+$font-prim: 'Dosis', sans-serif;
+$font-sec: 'Roboto', sans-serif;
+$font-cond: 'Roboto Condensed', sans-serif;
+$font-headings: 'Roboto Slab', serif;
+
+
+h3 {
+	font-family: $font-prim;
+	font-size: 2em;
+	color: $verse-color;
+	font-weight: 200;
+	margin-bottom: 30px;
+}
+
+h4 {
+	font-family: $font-sec;
+	font-size: 1em;
+	color: $chorus-color;
+	font-weight: 200;
+	margin: 0.5em 0;
+}
+
+.song-index {
+	margin: 50px;
+	font-family: $font-sec;
+	font-size: 1.5em;
+	color: $grey;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	a {
+		display: block;
+    	text-decoration: none;
+    	color: $grey;
+    	&:hover {
+    		text-decoration: underline;
+    	}
+    	&:active, &:visited {
+    		color: $grey;
+    	}
+	}
+
+}
+
+.song-list {
+	margin: 50px
+}
+
+.capo {
+    width: 237px;
+    text-transform: uppercase;
+}
+.capo,
+.song-title {
+	display: inline-block;
+    text-transform: uppercase;
+}
+
+.song-title {
+	margin-left: 52px;
+    text-transform: uppercase;
+}
+
+.lyrics {
+	font-family: $font-sec;
+	font-size: 1.5em;
+	font-weight: 200;
+	color: $grey;
+	margin: 0;
+	margin-bottom: 10%;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.verse .chords,
+.chorus .chords,
+.pre-chorus .chords,
+.bridge .chords {
+	width: 200px;
+	margin-right: 50px;
+	color: $white;
+	font-size: 1.5em;
+	font-family: $font-prim;
+	word-spacing: 10px;
+	text-align: center;
+}
+
+.verse .lyrics,
+.chorus .lyrics,
+.pre-chorus .lyrics,
+.bridge .lyrics {
+	font-size: 1.2em;	
+	padding: 20px 50px;
+}
+
+.verse {
+	.chords {
+		background-color: $verse-color;
+	}
+}
+
+.chorus {
+	.chords {
+		background-color: $chorus-color;
+	}
+}
+
+.pre-chorus {
+	.chords {
+		background-color: $pre-chorus-color;
+	}
+}
+
+.bridge {
+	.chords {
+		background-color: $bridge-color;
+	}
+}
+
+.structure {
+	padding: 10px;
+}
+
+.verse,
+.pre-chorus {
+	.structure{
+		background-color: $verse-color-soft;
+		color: $verse-color;
+	}
+}
+
+.chorus,
+.bridge {
+	.structure{
+		background-color: $chorus-color-soft;
+		color: $chorus-color;
+	}
+}
